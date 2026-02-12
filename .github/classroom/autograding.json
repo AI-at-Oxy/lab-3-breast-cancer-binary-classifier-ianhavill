@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Sigmoid Function",
+      "setup": "pip install -r requirements.txt",
+      "run": "python -m pytest test_binary_classification.py::TestSigmoid -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 12
+    },
+    {
+      "name": "Forward Pass",
+      "setup": "",
+      "run": "python -m pytest test_binary_classification.py::TestForward -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 16
+    },
+    {
+      "name": "Loss Function",
+      "setup": "",
+      "run": "python -m pytest test_binary_classification.py::TestLoss -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 12
+    },
+    {
+      "name": "Gradients",
+      "setup": "",
+      "run": "python -m pytest test_binary_classification.py::TestGradients -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 24
+    },
+    {
+      "name": "Training Pipeline",
+      "setup": "",
+      "run": "python -m pytest test_binary_classification.py::TestTraining -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 16
+    },
+    {
+      "name": "Model Comparison",
+      "setup": "",
+      "run": "python -m pytest test_comparison.py -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 20
+    }
+  ]
+}
